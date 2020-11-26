@@ -1,10 +1,11 @@
 const sequelize = require('./connect');
 const sq = require('sequelize')
 
-module.exports = sequelize.define('User', {
+module.exports = sequelize.define('users', {
   // Model attributes are defined here
   id: {
       type: sq.INTEGER,
+      autoIncrement: true,
       primaryKey: true,
       allowNull: false
   },
